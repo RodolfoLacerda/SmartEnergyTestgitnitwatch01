@@ -1,0 +1,28 @@
+{
+  "name": "SmartEnergyTest",
+  "version": "1.0.0",
+  "description": "Template pra usar Cucumberjs com Nightwatch",
+  "main": "app.js",
+  "scripts": {
+    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+    "test:ci": "./node_modules/.bin/nightwatch --env=headless"
+  },
+  "author": "Fernando Papito",
+  "license": "MIT",
+  "devDependencies": {
+    "chromedriver": "^79.0.0",
+    "cucumber": "^6.0.5",
+    "cucumber-expressions": "^8.3.0",
+    "cucumber-html-reporter": "^5.1.0",
+    "cucumber-pretty": "^6.0.0",
+    "faker": "^4.1.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^1.3.2",
+    "nightwatch-api": "^3.0.1",
+    "update": "^0.7.4"
+  },
+  "dependencies": {
+    "nightwatch-cucumber-editor": "^1.0.1",
+    "remove-node-modules": "^1.7.6"
+  }
+}
